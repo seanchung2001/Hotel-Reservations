@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+#include "RoomArray.h"
+
+/*
+Purpose of this program:
+Stores a collection of rooms.
+
+Complex or critical data members:
+
+add(Room*): Adds the specified room in the parameter to the collection of rooms.
+
+print(): Prints all of the rooms in the collection.
+*/
+
+RoomArray::RoomArray()
+{
+  size = 0;
+}
+
+RoomArray::~RoomArray()
+{
+  for (int i=0; i<size; ++i)
+    delete elements[i];
+}
+
+int RoomArray::getSize() { return size; }
+
+Room* RoomArray::get(int index)
+{
+  if (index < 0 || index >= size)
+    return NULL;
+
+  return elements[index];
+}
+
+void RoomArray::add(Room* r)
+{ 
+  if (size >= MAX_ARR)
+    return;
+
+  elements[size++] = r;
+}
+
+void RoomArray::print()
+{ 
+  cout << "ROOMS:" << endl;
+  for (int i=0; i<size; ++i)
+    elements[i]->print();
+
+  cout<<endl;
+}
