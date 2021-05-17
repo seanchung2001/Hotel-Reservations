@@ -2,7 +2,7 @@
 - Made-by: Sean Chung ([seanchung2001](http://www.github.com/seanchung2001))
 
 ## Minimum Requirements ##
-- Linux OS or VM with Linux environment
+- OS that allows compilation of C programs
 - Compiler
 
 ## Tools ##
