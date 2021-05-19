@@ -23,3 +23,4 @@
 - **(2)**: Open the terminal and _cd_ into the proper directory.
 - **(3)**: Type '_make_' into the terminal and wait for the compiler to compile.
 - **(4)**:  Run the executable '_p2_' by doing '_./p2_' in the terminal. The menu should now appear.
+- **(5)**: Type '_make clean_' in the terminal to remove all object files.
